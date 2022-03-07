@@ -5,7 +5,7 @@ PROJECT_NAME=hello_spring
 
 echo "Auto Deploy >>>  copy build files... (1/4)"
 
-cp $REPO/$PROJECT_NAME/build/libs/*.jar $REPO/
+cp $REPO/zip/*.jar $REPO/
 
 echo "Auto Deploy >>>  check running application... (2/4)"
 
