@@ -20,6 +20,7 @@ dependencies {
     implementation 'org.junit.jupiter:junit-jupiter:5.4.2'
     annotationProcessor 'org.projectlombok:lombok'
     implementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.12'
     implementation 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation "org.springframework.security:spring-security-test"
@@ -32,12 +33,4 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
-    testLogging {
-        // test jvm의 standard out and standard error을 console에 출력한다.
-        showStandardStreams = true
-        showCauses = true
-        showExceptions = true
-        showStackTraces = true
-        exceptionFormat = 'full'
-    }
 }
