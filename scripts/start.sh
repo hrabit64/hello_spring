@@ -8,7 +8,7 @@ REPOSITORY=/home/ec2-user/app/step3
 PROJECT_NAME=hello-spring
 
 echo "start.sh >>> copy Build files"
-echo "start.sh >>> cp $REPOSITORY/zip/*.jar $REPOSITORY/"
+echo "cp $REPOSITORY/zip/*.jar $REPOSITORY/"
 
 cp $REPOSITORY/zip/*.jar $REPOSITORY/
 

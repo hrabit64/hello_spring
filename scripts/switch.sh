@@ -9,7 +9,7 @@ function switch_proxy() {
 
     echo "switch.sh >>> target Port: $IDLE_PORT"
     echo "switch.sh >>> Port change"
-    echo "switch.sh >>> set \$service_url http://127.0.0.1:${IDLE_PORT};" | sudo tee /etc/nginx/conf.d/service-url.inc
+    echo "set \$service_url http://127.0.0.1:${IDLE_PORT};" | sudo tee /etc/nginx/conf.d/service-url.inc
 
     echo "switch.sh >>> nginx Reload"
     sudo service nginx reload
